@@ -8,6 +8,11 @@ Programming Instructions:
 Testing:
 To test your code, interact with the GUI you create! 
 
+To test 'desktop version', use the following terminal command: ./gradlew lwjgl3:run
+NOTE - to do this you must have turned on port forwarding of port 6080
+
+Alternatively - you can run using ./gradlew html:superDev, with the forwarded port 8080
+
 Submission:
 Run the following 3 commands in the terminal:
 1) git add . 
