@@ -67,7 +67,7 @@ public class Main extends InputAdapter implements ApplicationListener {
     };
     private Array<Rectangle> tiles = new Array<Rectangle>();
 
-    private static final float GRAVITY = -70f;
+    private static final float GRAVITY = -71f;
 
     private boolean debug = false;
     private ShapeRenderer debugRenderer;
