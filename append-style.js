@@ -8,8 +8,11 @@ const cssFilePath = path.join(__dirname, "html/build/dist/styles.css");
 const cssRule = `
 /* Ensure canvas dimensions override inline styles */
 canvas {
-    width: 800px !important;
-    height: 600px !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    aspect-ratio : 4/3 !important;
     display: block;
     margin: 0 auto;
     border: 1px solid #000; /* Optional border for debugging */
