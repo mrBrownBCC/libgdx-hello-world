@@ -67,7 +67,7 @@ public class Main extends InputAdapter implements ApplicationListener {
     };
     private Array<Rectangle> tiles = new Array<Rectangle>();
 
-    private static final float GRAVITY = -2.5f;
+    private static final float GRAVITY = -70f;
 
     private boolean debug = false;
     private ShapeRenderer debugRenderer;
@@ -162,7 +162,9 @@ public class Main extends InputAdapter implements ApplicationListener {
             debug = !debug;
 
         // apply gravity if we are falling
-        koala.velocity.add(0, GRAVITY);
+
+        //THIS NEEDS TO TAKE INTO ACCOUNT FRAME RATE
+        koala.velocity.add(0, GRAVITY*deltaTime);
 
         // clamp the velocity to the maximum, x-axis only
         koala.velocity.x = MathUtils.clamp(koala.velocity.x,

@@ -13,6 +13,11 @@ NOTE - to do this you must have turned on port forwarding of port 6080
 
 Alternatively - you can run using ./gradlew html:superDev, with the forwarded port 8080
 
+Publishing:
+Run 
+1) npm run build
+2) npm publish
+
 Submission:
 Run the following 3 commands in the terminal:
 1) git add . 

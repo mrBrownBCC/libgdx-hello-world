@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  },
+  "scripts": {
+    "build": "./gradlew html:dist && rm -rf html/build/dist/WEB-INF && node append-style.js",
+    "deploy": "gh-pages -d html/build/dist"
+  }
+}

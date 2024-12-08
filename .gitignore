@@ -43,6 +43,11 @@ com_crashlytics_export_strings.xml
 /ios/IOSLauncher.app
 /ios/IOSLauncher.app.dSYM
 
+## gh pages stuff
+node_modules/
+!node_modules/.cache/ # Allow caching folder
+node_modules/.cache/gh-pages/
+
 ## GWT:
 /html/war/
 /html/gwt-unitCache/
@@ -163,3 +168,6 @@ Thumbs.db
 ## You could also add that configuration to the text in nativeimage.gradle .
 ## You should delete or comment out the next line if you have configuration in a different resource-config.json .
 **/resource-config.json
+
+!/html/build/dist/
+!/html/build/dist/*
