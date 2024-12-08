@@ -52,11 +52,11 @@ a {
     background-color: rgb(100,100,100);
 }
 
-
+/* Ensure canvas dimensions override inline styles */
 canvas {
     width: 800px !important;
-    height: 600px !important; 
-    display: block; 
+    height: 600px !important;
+    display: block;
     margin: 0 auto;
-    border: 1px solid #000; 
+    border: 1px solid #000; /* Optional border for debugging */
 }
